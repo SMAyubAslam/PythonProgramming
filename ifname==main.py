@@ -1,0 +1,3 @@
+import ayub
+
+ayub.welcome()
