@@ -39,9 +39,11 @@
 
 # Keep in mind that the writelines() method does not add newline characters between the strings in the sequence. If you want to add newlines between the strings, you can use a loop to write each string separately:
 
-f = open('myfile2.txt','w')
-lines = ['Line1','Line2','Line3']
-for line in lines:
-    f.write(line + '\n')
+# f = open('myfile2.txt','w')
+# lines = ['Line1','Line2','Line3']
+# for line in lines:
+#     f.write(line + '\n')
 # f.close()
+
+
 
