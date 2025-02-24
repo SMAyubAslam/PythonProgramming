@@ -1,3 +1,8 @@
+# Decorators are a powerful and flexible feature in Python that can be used to add functionality to functions and methods without modifying their source code. They are a great tool for separating concerns, reducing code duplication, and making your code more readable and maintainable.
+
+# In conclusion, python decorators are a way to extend the functionality of functions and methods, by modifying its behavior without modifying the source code. They are used for a variety of purposes, such as logging, memoization, access control, and more. They are a powerful tool that can be used to make your code more readable, maintainable, and extendable.
+
+
 # def greet(fx):
 #     def mfx():
 #         print("Good Mornig")
@@ -24,16 +29,3 @@
 
 # add(2,4)
 
-import logging
-
-def log_function_call(func):
-    def decorated(*args, **kwargs):
-        logging.info(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
-        result = func(*args, **kwargs)
-        logging.info(f"{func.__name__} returned {result}")
-        return result
-    return decorated
-
-@log_function_call
-def my_function(a, b):
-    return a + b
