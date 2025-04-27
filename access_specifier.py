@@ -48,14 +48,14 @@ class Student:
     def __init__(self):
         self._name = "Ayub"
     
-    def _first_name(self):
+    def _first_name(self):      # protected method
         return("Syed Muhammad Ayub Aslam")
     
-class Subject(Student):
+class Subject(Student):     #inherited class
     pass
 
 obj = Student()
 obj1 = Subject()
 
-print(obj._name)
-print(obj1._first_name())
+print(obj._name)    # calling by object of Student class
+print(obj1._first_name())   # calling by object of Subject class
